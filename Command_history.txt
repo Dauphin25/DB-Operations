@@ -1,0 +1,47 @@
+
+0 command
+DROP TABLE books
+0 command
+INSERT INTO books VALUES ('The Great Gatsby', 180, 'Hardcover', 'Fiction')
+1 command
+('1', 'The Great Gatsby', 180, 'Hardcover', 'Fiction')
+2 command
+INSERT INTO books VALUES (''1', The Great Gatsby', 180, 'Hardcover', 'Fiction')
+3 command
+INSERT INTO books VALUES ('1', The Great Gatsby', 180, 'Hardcover', 'Fiction')
+4 command
+INSERT INTO books VALUES ('1', 'The Great Gatsby', 180, 'Hardcover', 'Fiction')
+5 command
+INSERT INTO books VALUES ('2', 'To Kill a Mockingbird', 324, 'Paperback', 'Classics')
+6 command
+ INSERT INTO books VALUES('3','1984', 328, 'Hardcover', 'Dystopian')
+7 command
+INSERT INTO books VALUES('4', 'Pride and Prejudice', 279, 'Paperback', 'Romance')
+8 command
+INSERT INTO books VALUES('5', 'The Catcher in the Rye', 224, 'Hardcover', 'Coming of Age')
+9 command
+INSERT INTO books VALUES('6', 'The Hobbit', 310, 'Paperback', 'Fantasy')
+10 command
+INSERT INTO books VALUES('7', 'The Da Vinci Code', 454, 'Hardcover', 'Mystery')
+11 command
+INSERT INTO books VALUES('8', 'Harry Potter and the Sorcerer\'s Stone', 320, 'Paperback', 'Fantasy')
+12 command
+INSERT INTO books VALUES('8', 'Harry Potter and the Sorcerer's Stone', 320, 'Paperback', 'Fantasy')
+13 command
+INSERT INTO books VALUES('8', 'Harry Potter and the Sorcerers Stone', 320, 'Paperback', 'Fantasy')
+14 command
+INSERT INTO books VALUES('9', 'The Lord of the Rings', 1178, 'Hardcover', 'Fantasy')
+15 command
+INSERT INTO books VALUES('10', 'The Hitchhikers Guide to the Galaxy', 208, 'Paperback', 'Science Fiction');
+16 command
+SELECT AVG(pages) AS average_pages FROM books;
+17 command
+SELECT AVG(pages) AS average_pages FROM books;
+18 command
+SELECT AVG(pages)  FROM books;
+19 command
+SELECT title WHERE MAX(PAGES) FROM books
+20 command
+SELECT title FROM books WHERE 	pages = (SELECT MAX(pages) FROM books)
+21 command
+SELECT * FROM books

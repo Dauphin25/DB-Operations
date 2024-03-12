@@ -1,0 +1,20 @@
+SELECT AVG(pages) AS average_pages FROM books;
+(380.5,)
+
+SELECT AVG(pages)  FROM books;
+(380.5,)
+
+SELECT title FROM books WHERE 	pages = (SELECT MAX(pages) FROM books)
+('The Lord of the Rings',)
+
+SELECT * FROM books
+(1, 'The Great Gatsby', 180, 'Hardcover', 'Fiction')
+(2, 'To Kill a Mockingbird', 324, 'Paperback', 'Classics')
+(3, '1984', 328, 'Hardcover', 'Dystopian')
+(4, 'Pride and Prejudice', 279, 'Paperback', 'Romance')
+(5, 'The Catcher in the Rye', 224, 'Hardcover', 'Coming of Age')
+(6, 'The Hobbit', 310, 'Paperback', 'Fantasy')
+(7, 'The Da Vinci Code', 454, 'Hardcover', 'Mystery')
+(8, 'Harry Potter and the Sorcerers Stone', 320, 'Paperback', 'Fantasy')
+(9, 'The Lord of the Rings', 1178, 'Hardcover', 'Fantasy')
+(10, 'The Hitchhikers Guide to the Galaxy', 208, 'Paperback', 'Science Fiction')

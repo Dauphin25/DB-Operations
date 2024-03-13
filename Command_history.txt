@@ -45,3 +45,13 @@ SELECT title WHERE MAX(PAGES) FROM books
 SELECT title FROM books WHERE 	pages = (SELECT MAX(pages) FROM books)
 21 command
 SELECT * FROM books
+0 command
+SELECT * FROM books
+1 command
+SELECT title, coverType FROM books
+2 command
+SELECT * FROM books WHERE pages > 100
+3 command
+SELECT * FROM books WHERE pages > 300
+4 command
+SELECT * FROM books ORDER BY pages DESC LIMIT 1
